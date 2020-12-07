@@ -178,7 +178,7 @@ function finishConflux(player,csid,option)
     end
 
     mask = player:getCharVar(maskVar);
-    activated = player:getMaskBit(mask,bit);
+    activated = utils.mask.getBit(mask,bit);
 	
     if (activated) then
 	    switch (option) : caseof
